@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #FFFFFF;
+    color: #373737;
+    margin: 0;
+    padding: 0;
+    background-image: url('fon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: relative;
+    background: #474A4F;
+    color: #FDFEFF;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.inheader img {
+    vertical-align: middle;
+}
+.title {
+    display: inline-block;
+    margin-left: 10px;
+}
+nav {
+    display: flex;
+    margin: 20px 0;
+    background-color: #FDFEFF;
+    position: absolute;
+    top: 0; 
+    left: 40;
+    right: 0;
+}
+.navlist {
+    list-style: none;
+    display: flex;
+}
+.navitem {
+    margin: 0 15px; 
+    color: #FDFEFF;
+}
+.left, .center {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #909090;
+    width: 80%; 
+}
+h2 {
+    color: #35424a;
+}
+.tab {
+    margin: 20px 0;
+}
+table {
+    width: 82.5%;
+    border-collapse: collapse;
+    margin: auto; 
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #F2EFEA;
+}
+th {
+    background-color: #5B6E74;
+    color: white;
+}
+.rows {
+    background-color: #f9f9f9;
+}
+.rows2 {
+    background-color: #ffffff;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #5B6E74;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+* {
+    box-sizing: border-box; 
+}
+@media(max-width: 768px){
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        flex-direction: column;
+        width: 100%; 
+        position: relative;
+    }
+    .navlist {
+        flex-direction: column;
+    }
+    .navitem {
+        margin: 10px 0;
+    }
+    table{
+        order: 1;
+    }
+    .left {
+        order: 2;
+        width: 100%; 
+    }
+    .center{
+        order: 3;
+        width: 100%; 
+    }
+    footer{
+        order: 4;
+        width: 100%; 
+    }
+    header{
+        width: 100%;
+    }
+    .inheader img{
+        width: 35%;
+    }
+}
